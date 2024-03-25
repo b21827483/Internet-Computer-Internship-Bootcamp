@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "learnicp_backend": {
+      "main": "src/learnicp_backend/main.mo",
+      "type": "motoko"
+    },
+    "learnicp_frontend": {
+      "dependencies": [
+        "learnicp_backend"
+      ],
+      "source": [
+        "src/learnicp_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
